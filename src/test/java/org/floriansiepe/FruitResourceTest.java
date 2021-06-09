@@ -68,7 +68,7 @@ class FruitResourceTest {
     }
 
     @Test
-    public void testUpdate() {
+    void testUpdate() {
         final Integer id = given()
                 .when()
                 .header("Content-Type", MediaType.APPLICATION_JSON)
@@ -101,7 +101,7 @@ class FruitResourceTest {
     }
 
     @Test
-    public void updateInvalid() {
+    void updateInvalid() {
         given()
                 .when()
                 .header("Content-Type", MediaType.APPLICATION_JSON)
